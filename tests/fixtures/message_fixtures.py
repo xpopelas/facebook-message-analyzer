@@ -1,16 +1,16 @@
 import json
+from pathlib import Path
 
 import pytest
 
 
 @pytest.fixture
-def simple_message_content() -> str:
-    path = "tests/samples/simple_message.json"
+def simple_message_dict() -> dict:
+    path = Path("tests") / Path("samples") / Path("simple_message.json")
     with open(path, "r", encoding="UTF-8") as fh:
-        file_content = "".join(fh.readlines())
-    return file_content
+        return json.load(fh)
 
 
 @pytest.fixture
-def simple_message_dict(simple_message_content) -> dict:
-    return json.loads(simple_message_content)
+def fake_fbdata_path() -> Path:
+    return Path("tests") / Path("samples") / Path("fake_fbdata")

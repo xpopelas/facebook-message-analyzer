@@ -1,0 +1,33 @@
+{
+  "participants": [
+    {
+      "name": "Facebook User a455"
+    },
+    {
+      "name": "Test User"
+    }
+  ],
+  "messages": [
+    {
+      "sender_name": "Facebook User a455",
+      "timestamp_ms": 123456789012,
+      "content": "Test message 1",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Test User",
+      "timestamp_ms": 123456798012,
+      "content": "Test message 2",
+      "type": "Generic",
+      "is_unsent": false
+    }
+  ],
+  "title": "Facebook User a455",
+  "is_still_participant": true,
+  "thread_type": "Regular",
+  "thread_path": "inbox/facebookuser_a455",
+  "magic_words": [
+
+  ]
+}
