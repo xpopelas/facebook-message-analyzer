@@ -162,8 +162,8 @@ class FbChat:
             self.image = FbFile(image)
         if (joinable_mode := dct.get("joinable_mode")) is not None:
             self.joinable_mode = FbJoinableMode(joinable_mode)
+        self.messages = []
         if (messages := dct.get("messages")) is not None:
-            self.messages = []
             for message in messages:
                 self.messages.append(FbMessage(message))
         self.messages.sort(key=lambda msg: msg.timestamp_ms)
