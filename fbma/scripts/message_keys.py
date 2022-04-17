@@ -23,9 +23,7 @@ def find_all_files_with_suffix(source: str, suffix: str) -> Set[str]:
 
 def load_json_from_file(path: str):
     with open(path, "r", encoding="UTF-8") as fh:
-        file_content = "".join(fh.readlines())
-    logging.debug("Loaded file at '%s'", path)
-    return json.loads(file_content)
+        return json.load(fh)
 
 
 def analyze_dict(fb_dict: dict) -> set:
