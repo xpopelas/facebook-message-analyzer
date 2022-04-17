@@ -1,0 +1,47 @@
+{
+  "participants": [
+    {
+      "name": "Participant"
+    },
+    {
+      "name": "User"
+    }
+  ],
+  "messages": [
+    {
+      "sender_name": "Participant",
+      "timestamp_ms": 1501577040301,
+      "content": "Test message 1",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "User",
+      "timestamp_ms": 1501574624708,
+      "content": "Test message 2",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Participant",
+      "timestamp_ms": 1501567809063,
+      "content": "Test message 3",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "User",
+      "timestamp_ms": 1501523278218,
+      "content": "Test message 4",
+      "type": "Generic",
+      "is_unsent": false
+    }
+  ],
+  "title": "Participant",
+  "is_still_participant": true,
+  "thread_type": "Regular",
+  "thread_path": "samples",
+  "magic_words": [
+
+  ]
+}
